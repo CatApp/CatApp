@@ -48,8 +48,6 @@ function studentAdd() {
       $("#student").append("<tbody></tbody>");
   }
 
-  $("student").append("<tr><td>aaaa</td></tr>");
-
   // Append product to the table
   $("#student tbody").append("<tr>" +
             "<td>1</td>" +
