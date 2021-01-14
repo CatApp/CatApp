@@ -1,5 +1,7 @@
 /* CSS Document */
-
+*{
+	box-sizing: border-box;
+}
 .container{
 	max-width: 1366px;
 	/* 1366x768	16:9*/
@@ -33,11 +35,17 @@
 	padding: 14px 16px;
 	text-decoration: none;
 	height: 100%;
+	width: 15%;
+	position: relative;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
-.navbar a.searchBar
+.navbar a.searchBar,.logoutLink
 {
 	float:right;
+	height: 100%;
 }
 
 
