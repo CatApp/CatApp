@@ -42,7 +42,7 @@ function openTab(evt, findTab) {
 }
 
 // Add products to <table>
-function productsAdd() {
+function studentAdd() {
   // First check if a <tbody> tag exists, add one if not
   if ($("#student tbody").length == 0) {
       $("#student").append("<tbody></tbody>");

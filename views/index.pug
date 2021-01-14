@@ -8,7 +8,7 @@ block layout-content
           div.NavButton Nav Button
     head
       div.navbar
-        a(href="/") CaApp
+        a(href="/") CatApp
         a.logo
           // <img src="images/webLogo.svg" alt="" />
         a.therapistName
@@ -19,6 +19,7 @@ block layout-content
             input(type="text" placeholder="Search Students")
             button(type="submit" aria-hidden="true")
               i.fa.fa-search
+          script.studentAdd()
         a.logoutLink
             a(href="/login") Logout
     body
@@ -29,25 +30,18 @@ block layout-content
               h1
                 | Main Heading 
                 br
-                span#viewPortData
-            div.strapline
-              div.straplinetxt
-                p
-                  | Example Text
-                p
-                  | Maybe put a table here
-                table
+            div.studentTable
+              p
+                | Example Text
+              p
+                | Maybe put a table here
+              table
+                tbody
                   tr
-                    th StudentID
-                    th
-                    th TherapistID
-                    th
+                    th Student ID
+                    th Therapist ID
                     th Username
-                    th
-                    th LastReviewed
-                    th
-                  tr
-                table
+                    th Date Last Reviewed
           .sideBar
           div.sideBar
             h3 For Something?
