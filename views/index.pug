@@ -19,9 +19,9 @@ block layout-content
             input(type="text" placeholder="Search Students")
             button(type="submit" aria-hidden="true")
               i.fa.fa-search
-          script.studentAdd()
+              
         a.logoutLink
-            a(href="/login") Logout
+          a(href="/login") Logout
     body
       div.container
         div.mainContent
@@ -35,27 +35,14 @@ block layout-content
                 | Example Text
               p
                 | Maybe put a table here
-              table
+              table#student
                 tbody
                   tr
                     th Student ID
                     th Therapist ID
                     th Username
                     th Date Last Reviewed
-          .sideBar
-          div.sideBar
-            h3 For Something?
-            ul
-              li
-                a(href="") Updates?
-              li
-                a(href="") Quick Access things
-            h3 News
-            ul
-              li
-                a(href="") Latest published stuff
-              li
-                a(href="") Archive released
+              script studentAdd()
     footer
       div.fcontainer
         div.row

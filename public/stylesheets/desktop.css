@@ -35,15 +35,19 @@
 	padding: 14px 16px;
 	text-decoration: none;
 	height: 100%;
-	width: 15%;
 	position: relative;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 }
 
-.navbar a.searchBar,.logoutLink
+.navbar a.searchBar
 {
+	float:right;
+	height: 100%;
+}
+
+.navbar a.logoutLink{
 	float:right;
 	height: 100%;
 }
