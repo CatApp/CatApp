@@ -27,6 +27,42 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+app.get('/student', function(req, res) {
+  var studentList = [];
+
+	// Connect to MySQL database.
+	var connection = getMySQLConnection();
+	connection.connect();
+
+	// Do the query to get data.
+	connection.query('SELECT * FROM student', function(err, rows, fields) {
+	  	if (err) {
+	  		res.status(500).json({"status_code": 500,"status_message": "internal server error"});
+	  	} else {
+	  		// Loop check on each row
+	  		for (var i = 0; i < rows.length; i++) {
+
+	  			// Create an object to save current row's data
+		  		var student = {
+		  			'SID':rows[i].SID,
+		  			'TID':rows[i].TID,
+		  			'Username':rows[i].Username,
+		  			'Last Reviewed':rows[i].LastReviewed
+		  		}
+		  		// Add object into array
+		  		studentList.push(student);
+	  	}
+
+	  	// Render index.pug page using array 
+	  	res.render('index', {"studentList": studentList});
+	  	}
+	});
+
+	// Close the MySQL connection
+	connection.end();
+	
+});
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

@@ -40,3 +40,20 @@ function openTab(evt, findTab) {
   document.getElementById(findTab).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Add products to <table>
+function productsAdd() {
+  // First check if a <tbody> tag exists, add one if not
+  if ($("#student tbody").length == 0) {
+      $("#student").append("<tbody></tbody>");
+  }
+  
+  // Append product to the table
+  $("#student tbody").append("<tr>" +
+      "<td>1</td>" +
+      "<td>2</td>" +
+      "<td>Roger7</td>" +
+      "<td>2000-12-13</td>" +
+      "</tr>");
+      
+}
