@@ -47,7 +47,6 @@ function studentAdd() {
   if ($("#student tbody").length == 0) {
       $("#student").append("<tbody></tbody>");
   }
-
   // Append product to the table
   $("#student tbody").append("<tr>" +
       "<td>3</td>" +
