@@ -19,7 +19,7 @@ block layout-content
             input(type="text" placeholder="Search Students")
             button(type="submit" aria-hidden="true")
               i.fa.fa-search
-          script.studentAdd()
+              script studentAdd()
         a.logoutLink
             a(href="/login") Logout
     body
@@ -35,7 +35,7 @@ block layout-content
                 | Example Text
               p
                 | Maybe put a table here
-              table
+              table#student
                 tbody
                   tr
                     th Student ID
