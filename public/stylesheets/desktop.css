@@ -13,6 +13,8 @@
 	font-size: 17px;
 }
 
+
+
 /* Add a black background color to the top navigation */
 .navbar {
 	overflow: hidden;
@@ -24,15 +26,21 @@
 }
 
 .navbar a {
-	float: left;
+	
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	height: 100%;
 }
 
-.searchbar
+.navbar a.searchBar
+{
+	float:right;
+}
+
+
 
 /* Change background on mouse-over */
 .navbar a:hover {
@@ -162,25 +170,53 @@
     background-color: transparent;
     border: 2px solid #2c3340;
 }
-header,
-.mainContent,
-.row {
+
+html,body
+{
+	height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+head,
+.mainContent
+{
  max-width: 1200px;
  padding: 0 5px;
  margin: auto;
+ min-height: 500px;
+ flex: 1 0 auto;
 }
 
 footer {
     background-color: #011424;
     color: #fff;
-    padding: 0 10px;
+	padding: 20px;
+	position: fixed;
+	display: block;
+	flex-shrink: 0;
+	padding: 20px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
-footer .row {
-    display: flex;
+.fcontainer{
+	width: 750px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer .row {
+    display: block;
     flex-direction: column;
 }
-footer .row address {
+.footer .row address {
     padding: 15px 0 5px 5px;
 }
 .footerSocialLinks {
@@ -198,8 +234,7 @@ footer .row address {
     color: #fff;
     font-size: 1.4rem;
 }
-.footerLinks {
-    display: flex;
+footer .footerLinks {
     list-style: none;
     padding-left: 0;
     flex-wrap: wrap;

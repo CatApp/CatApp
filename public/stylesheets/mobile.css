@@ -16,6 +16,24 @@ header {
     flex-wrap: wrap;
 }
 
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	left:0;
+	width: 100%; /* Full width */
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
 .mainNav {
     background-color: #8d965b;
     display:none;
@@ -172,11 +190,12 @@ footer.row address {
     color: #fff;
     font-size: 1.4rem;
 }
-.footerLinks.rows {
+.fosoterLink {
     display: flex;
     list-style: none;
     padding-left: 0;
     flex-wrap: wrap;
+    
 }
 .footerLinks ul li {
     border-right: 1px solid #ccc;
