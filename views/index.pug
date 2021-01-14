@@ -8,7 +8,7 @@ block layout-content
           div.NavButton Nav Button
     head
       div.navbar
-        a(href="/") CaApp
+        a(href="/") CatApp
         a.logo
           // <img src="images/webLogo.svg" alt="" />
         a.therapistName
@@ -28,40 +28,17 @@ block layout-content
             div.mainheading
               h1
                 | Main Heading 
-                br
-                span#viewPortData
-            div.strapline
-              div.straplinetxt
-                p
-                  | Example Text
-                p
-                  | Maybe put a table here
-                table
-                  tr
-                    th StudentID
-                    th
-                    th TherapistID
-                    th
-                    th Username
-                    th
-                    th LastReviewed
-                    th
-                  tr
-                table
-          .sideBar
-          div.sideBar
-            h3 For Something?
-            ul
-              li
-                a(href="") Updates?
-              li
-                a(href="") Quick Access things
-            h3 News
-            ul
-              li
-                a(href="") Latest published stuff
-              li
-                a(href="") Archive released
+            div.studentTable
+              p
+                | Example Text
+              p
+                | Maybe put a table here
+              table
+                tr
+                  th StudentID
+                  th TherapistID
+                  th Username
+                  th LastReviewed        
     footer
       div.fcontainer
         div.row
