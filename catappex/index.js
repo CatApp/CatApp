@@ -20,6 +20,9 @@ const port = process.env.PORT || "8000";
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "javascripts")));
+
 
 
 /**
@@ -27,6 +30,12 @@ app.set("view engine", "pug");
  */
 app.get("/", (req, res) => {
     res.render("index", { title: "CatApp" });
+  });
+app.get("/studentinfo", (req, res) => {
+    res.render("studentinfo", { title: "studentinfo", studentProfile: { nickname: "TherapistName" } });
+  });  
+app.get("/filepond", (req, res) => {
+    res.render("filepond", { title: "filepond", filepondProfile: { nickname: "Filepond!" } });
   });
 
 
