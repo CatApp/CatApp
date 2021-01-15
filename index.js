@@ -37,6 +37,9 @@ app.get("/studentinfo", (req, res) => {
 app.get("/filepond", (req, res) => {
     res.render("filepond", { title: "filepond", filepondProfile: { nickname: "Filepond!" } });
   });
+app.get("/login", (req, res) => {
+  res.render("login", { title: "login", loginProfile: { nickname: "Login!" } });
+});
 
 
 /**

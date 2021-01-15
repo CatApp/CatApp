@@ -8,19 +8,24 @@ block layout-content
           div.NavButton Nav Button
     head
       div.navbar
-        a(href="/") CatApp
-        a.logo
-          // <img src="images/webLogo.svg" alt="" />
-        a.therapistName
-          p#therapistNameText TEST
-            // Text to be changed by js depending on the person logged in
-        a.searchBar
-          form
-            input(type="text" placeholder="Search Students")
-            button(type="submit" aria-hidden="true")
-              i.fa.fa-search
-        a.logoutLink
-          a(href="/login") Logout
+        ul
+          li 
+            a(href="/") CatApp
+          li  
+            a.logo(img src="images/CatApp-Logo.png" alt="")
+          li  
+            a#therapistNameText TEST
+                // Text to be changed by js depending on the person logged in
+        div.nav-right
+          ul
+            li  
+              a.searchBar
+                form
+                  input(type="text" placeholder="Search Students")
+                  button(type="submit" aria-hidden="true")
+                    i.fa.fa-search
+            li        
+              a.logoutLink(href="/login") Logout
     body
       div.container
         div.mainContent
