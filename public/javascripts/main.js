@@ -49,13 +49,6 @@ function studentAdd() {
   }
   // Append product to the table
   $("#student tbody").append("<tr>" +
-            "<td>1</td>" +
-            "<td>2</td>" +
-            "<td>Roger</td>" +
-            "<td>18/04/1996</td>"+
-            "</tr>");
-            
-  $("#student tbody").append("<tr>" +
       "<td>3</td>" +
       "<td>4</td>" +
       "<td>Theo</td>" +
