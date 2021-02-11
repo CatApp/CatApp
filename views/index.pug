@@ -8,14 +8,16 @@ block layout-content
           div.NavButton Nav Button
     head
       div.navbar
-        ul
-          li 
-            a(href="/") CatApp
-          li  
-            a.logo(img src="images/CatApp-Logo.png" alt="")
-          li  
-            a#therapistNameText TEST
-                // Text to be changed by js depending on the person logged in
+        div.pull-left
+          a(href="#")
+            image-responsive(img src="images/CatApp-Logo.PNG")
+        div.nav-left
+          ul
+            li 
+              a(href="/") CatApp
+            li  
+              a#therapistNameText TEST
+                  // Text to be changed by js depending on the person logged in
         div.nav-right
           ul
             li  
@@ -37,8 +39,6 @@ block layout-content
             div.studentTable
               p
                 | Example Text
-              p
-                | Maybe put a table here
               table#student
                 tbody
                   tr

@@ -6,13 +6,16 @@
 	max-width: 1;
 	/* 1366x768	16:9*/
 	margin:auto;
-
 	float: left;
-	
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+	position: absolute;
+	min-height: 2em;
+	top: 0px;
+	bottom: 150px;
+	overflow:auto;
 }
 
 .login-form {
@@ -82,7 +85,16 @@ background-color: #9f1d35;
 color: white;
 }
 
-.navbar li a{
+.image-responsive img{
+	width: fit-content;
+	height: 100%;
+}
+
+.pull-left{
+	display: flex;
+	width: 5%;
+}
+.nav-left li a{
 	display: inline-block;
 	color: white;
 	background-color:#9f1d35;
@@ -94,12 +106,12 @@ color: white;
 
 }
 
-.navbar li a:hover {
+.nav-left li a:hover {
 	background-color: #111;
 	color: white;
 }
 
-.navbar ul{
+.nav-left ul{
   list-style-type: none;
   padding: 0;
   overflow: hidden;
@@ -110,6 +122,18 @@ color: white;
   padding: 14px 18px;
   max-width: 1;
 }
+
+.nav-right ul{
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	background-color: #9f1d35;
+	height: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 14px 18px;
+	max-width: 1;
+  }
 
 .navbar li{
 	display: flex;
@@ -178,7 +202,7 @@ color: white;
   
 /* Main content */
 .container {
-	margin-top: 50px; /* Add a top margin to avoid content overlay */
+	margin-top: 60px; /* Add a top margin to avoid content overlay */
 }
 
 .tab {
@@ -307,16 +331,23 @@ html,body
 body{
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
+    overflow: auto;
+    min-height: 2em;
 }
 
-head,
+head,main,
 .mainContent
 {
- max-width: 1200px;
+ max-width: 1;
  padding: 0 5px;
  margin: auto;
  min-height: 500px;
- flex: 1 0 auto;
+ flex-grow: 1;
+}
+
+.mainheading, .studentTable p{
+	text-align: left;
 }
 
 footer {
@@ -330,6 +361,7 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	height: 150px
 }
 
 .fcontainer{
@@ -337,7 +369,7 @@ footer {
 	padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: inherit;
 }
 
 .footer .row {
@@ -367,6 +399,7 @@ footer {
     padding-left: 0;
 	flex-wrap: wrap;
 	display: inline;
+
 }
 .footerLinks li {
 	border-right: 1px solid #ccc;
