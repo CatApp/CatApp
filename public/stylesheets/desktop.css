@@ -208,7 +208,7 @@ color: white;
 .tab {
 	overflow: hidden;
 	border: 1px solid #ccc;
-	background-color: #f1f1f1;
+	background-color:#AC3B61 ;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -248,7 +248,7 @@ color: white;
 	stylePanelLayout:circle;
 }*/
 .filepond--root {
-	max-height: 10em;
+	max-height: 50;
 	
 }
 /* the text color of the drop label*/
@@ -506,4 +506,222 @@ main {
 
 .burgerMenu {
 	display: none;
+}
+.q1{
+    font-style: oblique;
+    border: 1px solid#BAB2B5 ;
+    background:#AC3B61 ;
+    text-shadow: teal;
+    text-align: center;
+    padding: 14px 16px;
+    position: absolute;
+    top:350px;
+    left:30%;
+}
+.SliderBar{
+    width:60%;
+    margin: 24% auto;
+position: relative;
+}
+#slider{
+    -webkit-appearance: none;
+    width:100%;
+    height:40px;
+    outline:none;
+    border-radius:3px;
+}
+#slider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:46px;
+    height:48px;
+    cursor:pointer;
+z-index:3;
+position:relative;
+}
+#selector{
+    height:96px;
+    width:46px;
+    position:absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:2;
+}
+.SelectBtn{
+    height:48px;
+    width:46px;
+    background-image: url(../images/CatApp-Logo.png);
+    background-size: cover;
+    background-position:center;
+    border-radius: 50%;
+    position:absolute;
+    bottom:0;
+}
+#SelectValue{
+    width: 46px;
+    height:48px;
+    position: absolute;
+    top:0;
+    background:#420f3c;
+    border-radius: 2px;
+    text-align: center;
+    color:#BAB2B5;
+    line-height:45px ;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#ProgressBar{
+    width:50px;
+    height:40px;
+    background:#AC3B61;
+    border-radius:3px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.SliderBar2{
+    width:60%;
+    margin: 24% auto;
+position: relative;
+}
+#slider2{
+    -webkit-appearance: none;
+    width:100%;
+    height:40px;
+    outline:none;
+    border-radius:3px;
+}
+#slider2::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:46px;
+    height:48px;
+    cursor:pointer;
+z-index:3;
+position:relative;
+}
+#selector2{
+    height:96px;
+    width:46px;
+    position:absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:2;
+}
+.SelectBtn2{
+    height:48px;
+    width:46px;
+    background-image: url(../images/CatApp-Logo.png);
+    background-size: cover;
+    background-position:center;
+    border-radius: 50%;
+    position:absolute;
+    bottom:0;
+}
+#SelectValue2{
+width:46px;
+height:48px;
+position: absolute;
+top:0;
+background:#420f3c ;
+border-radius: 2px;
+text-align: center;
+color:#BAB2B5;
+line-height:45px ;
+font-size: 20px;
+font-weight: bold;
+}
+#ProgressBar2{
+    width:50px;
+    height:40px;
+    background:#AC3B61;
+    border-radius:3px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.q2{
+    font-style: oblique;
+    border: 1px solid#BAB2B5 ;
+    background:#AC3B61 ;
+    text-shadow: teal;
+    text-align: center;
+    padding: 14px 16px;
+    position: absolute;
+    top:850px;
+    left:30%;  
+}
+.SliderBar3{
+    width:60%;
+    margin: 24% auto;
+position: relative;
+}
+#slider3{
+    -webkit-appearance: none;
+    width:100%;
+    height:40px;
+    outline:none;
+    border-radius:3px;
+}
+#slider3::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:46px;
+    height:48px;
+    cursor:pointer;
+z-index:3;
+position:relative;
+}
+#selector3{
+    height:96px;
+    width:46px;
+    position:absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:2;
+}
+.SelectBtn3{
+    height:48px;
+    width:46px;
+    background-image: url(../images/CatApp-Logo.png);
+    background-size: cover;
+    background-position:center;
+    border-radius: 50%;
+    position:absolute;
+    bottom:0;
+}
+#SelectValue3{
+width:46px;
+height:48px;
+position: absolute;
+top:0;
+background:#420f3c ;
+border-radius: 2px;
+text-align: center;
+color:#BAB2B5;
+line-height:45px ;
+font-size: 20px;
+font-weight: bold;
+}
+#ProgressBar3{
+    width:50px;
+    height:40px;
+    background:#AC3B61;
+    border-radius:3px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.q3{
+    font-style: oblique;
+    border: 1px solid#BAB2B5 ;
+    background:#AC3B61 ;
+    text-shadow: teal;
+    text-align: center;
+    padding: 14px 16px;
+    position: absolute;
+    top:1350px;
+    left:30%;  
 }
