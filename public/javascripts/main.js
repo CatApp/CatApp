@@ -54,4 +54,11 @@ function studentAdd() {
       "<td>Theo</td>" +
       "<td>13/12/2000</td>"+
       "</tr>");  
+
+  $("#student tbody").append("<tr>" +
+  "<td>9</td>" +
+  "<td>1</td>" +
+  "<td>Lauren</td>" +
+  "<td>18/04/1996</td>"+
+  "</tr>"); 
 }
