@@ -44,8 +44,7 @@ function openTab(evt, findTab) {
 // Add products to <table>
 function studentAdd() {
 
-  var studentname1 = "Theo"
-  var studentname2 = "Lauren"
+  
   // First check if a <tbody> tag exists, add one if not
   if ($("#student tbody").length == 0) {
       $("#student").append("<tbody></tbody>");
@@ -54,21 +53,16 @@ function studentAdd() {
   $("#student tbody").append("<tr>" +
       "<td>3</td>" +
       "<td>4</td>" +
-      "<td><button>studentname1</button></td>" +
+      '<td><button class = "studentbtn" >Theo</button></td>' +
       "<td>13/12/2000</td>"+
       "</tr>");  
-<<<<<<< Updated upstream
 
   $("#student tbody").append("<tr>" +
   "<td>9</td>" +
   "<td>1</td>" +
-  "<td><button>Lauren</button></td>" +
+  '<td><button class = "studentbtn" >Lauren</button></td>' +
   "<td>18/04/1996</td>"+
   "</tr>"); 
-
-
-  var btn = document.getElementById("#student button")
-  btn.classList.add("studentbtn");
 
 }
 
@@ -98,8 +92,7 @@ function removeItem() {
 	var item = document.getElementById(helpfulThing.value);
 	ul.removeChild(item);
 }
-=======
-}
+
 
 /*function viewAll (app, req, res) {
   console.info("View All controller");
@@ -118,4 +111,3 @@ function removeItem() {
         login: req.session.login,
       });
     })};*/
->>>>>>> Stashed changes
