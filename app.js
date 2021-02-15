@@ -28,11 +28,17 @@ app.use(function(req, res, next) {
 });
 
 
-/*var MongoClient = require('mongodb').MongoClient
+var testObj = {SID:3, TID:1, Fname:"L",Lname:"CORFIELD"};
 
-MongoClient.connect('mongodb+srv:admin:CyyuBE7j1c8BlVx2@cluster0.wbsei.mongodb.net/CatApp?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }, function (err, client) {
-
-	app.set('myDb', client.db('CatApp'));
-})*/
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv:admin:CyyuBE7j1c8BlVx2@cluster0.wbsei.mongodb.net/CatApp?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true});
+/*client.connect(err => {
+  // perform actions on the collection object
+  const collection = client.db("dev").collection("Student");
+  console.dir(collection);
+  collection.insertOne(testObj);
+  client.close();
+});*/
 
 module.exports = app;

@@ -54,7 +54,6 @@ function studentAdd() {
       "<td>Theo</td>" +
       "<td>13/12/2000</td>"+
       "</tr>");  
-<<<<<<< Updated upstream
 
   $("#student tbody").append("<tr>" +
   "<td>9</td>" +
@@ -81,8 +80,7 @@ function removeItem() {
 	var item = document.getElementById(helpfulThing.value);
 	ul.removeChild(item);
 }
-=======
-}
+
 
 /*function viewAll (app, req, res) {
   console.info("View All controller");
@@ -101,4 +99,3 @@ function removeItem() {
         login: req.session.login,
       });
     })};*/
->>>>>>> Stashed changes
