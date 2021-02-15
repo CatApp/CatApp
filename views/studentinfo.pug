@@ -13,7 +13,7 @@ block layout-content
       // Tab content
       #Therapy.tabcontent
         h3 Therapy Maps
-        p therapy section.
+        p therapy section, here you can upload any visualisations you might have done recently.
         div.filepond
           input(type="file" multiple="")
           script.
@@ -99,8 +99,19 @@ block layout-content
           }
 
       #Changework.tabcontent
-        h3 Changework
-        p Changework section
+       .overall-changework  
+          .overall-changework
+            .container-changework
+              .row-changework
+                .col-12
+                  .input-group
+                    input#helpfulThing.form-control(type='text', required='')                                 
+                    .input-group-append
+                      button.btn.btn-add(onclick='addItem()', type='button') Add something that helps you
+                      button.btn.btn-remove(onclick='removeItem()', type='button') Remove something that helps you
+                                   
+                    ul#dynamic-list
+
     footer
     .row
       address
@@ -115,6 +126,7 @@ block layout-content
         ul
           li
             a(href="" aria-label="Twitter")
+            
               i.fab.fa-twitter
           li
             a(href="" aria-label="Facebook")
