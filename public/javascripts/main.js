@@ -80,3 +80,16 @@ function removeItem() {
 	var item = document.getElementById(helpfulThing.value);
 	ul.removeChild(item);
 }
+function changeworkAdd() {
+  if ($("#changework tbody").length == 0) {
+    $("#changework").append("<tbody></tbody>");
+  }
+
+  // Append product to the table
+  console.log("hitting here");
+  $("#changework tbody").append("<tr>" +
+      "<td>3</td>" +
+      "<td>Visualisations</td>" +
+      "<td>15/02/2021</td>"+
+      "</tr>");  
+}
