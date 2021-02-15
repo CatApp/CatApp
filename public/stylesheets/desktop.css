@@ -725,3 +725,51 @@ font-weight: bold;
     top:1350px;
     left:30%;  
 }
+.input-group{
+    
+    margin: 50px 0px;
+}
+
+.input-group input{
+    height: 45px;
+    
+}
+
+.btn-add{
+
+    background-color: rgb(12, 163, 45);
+    color: white;
+    padding: 0px 63px;
+}
+
+.btn-remove{
+
+    background-color: rgb(197, 37, 37);
+    color: white;
+    padding: 0px 50px;
+}
+
+#dynamic-list{
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    
+}
+.changework li{
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color:
+    #BAB2B5;
+    border: 1px solid
+    rgba(0,0,0,.125);
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    
+}

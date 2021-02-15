@@ -62,3 +62,21 @@ function studentAdd() {
   "<td>18/04/1996</td>"+
   "</tr>"); 
 }
+function addItem() {
+  console.log("pls work");
+	var changeworkul = document.getElementById("dynamic-list");
+	var helpfulThing = document.getElementById("helpfulThing");
+	var changeworkli = document.createElement("changework li");
+  //testList.value = helpfulThing.value;
+	changeworkli.setAttribute('id', helpfulThing.value);
+	 changeworkli.appendChild(document.createTextNode(helpfulThing.value));
+	changeworkul.appendChild(changeworkli);
+}
+
+
+function removeItem() {
+	var ul = document.getElementById("dynamic-list");
+	var helpfulThing = document.getElementById("helpfulThing");
+	var item = document.getElementById(helpfulThing.value);
+	ul.removeChild(item);
+}
