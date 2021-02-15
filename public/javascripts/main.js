@@ -43,6 +43,9 @@ function openTab(evt, findTab) {
 
 // Add products to <table>
 function studentAdd() {
+
+  var studentname1 = "Theo"
+  var studentname2 = "Lauren"
   // First check if a <tbody> tag exists, add one if not
   if ($("#student tbody").length == 0) {
       $("#student").append("<tbody></tbody>");
@@ -51,22 +54,36 @@ function studentAdd() {
   $("#student tbody").append("<tr>" +
       "<td>3</td>" +
       "<td>4</td>" +
-      "<td>Theo</td>" +
+      "<td><button>studentname1</button></td>" +
       "<td>13/12/2000</td>"+
       "</tr>");  
 
   $("#student tbody").append("<tr>" +
   "<td>9</td>" +
   "<td>1</td>" +
-  "<td>Lauren</td>" +
+  "<td><button>Lauren</button></td>" +
   "<td>18/04/1996</td>"+
   "</tr>"); 
+
+
+  var btn = document.getElementById("#student button")
+  btn.classList.add("studentbtn");
+
 }
+
+$(document).ready(function(){
+  $(".studentbtn").click(function(){
+      location.href = "/studentinfo"
+  });
+});
+
+
 function addItem() {
   console.log("pls work");
 	var changeworkul = document.getElementById("dynamic-list");
 	var helpfulThing = document.getElementById("helpfulThing");
-	var changeworkli = document.createElement("changework li");
+	var changeworkli = document.createElement("li");
+  changeworkli.classList.add("changework");
   //testList.value = helpfulThing.value;
 	changeworkli.setAttribute('id', helpfulThing.value);
 	 changeworkli.appendChild(document.createTextNode(helpfulThing.value));
