@@ -773,3 +773,19 @@ font-weight: bold;
     border-bottom-right-radius: .25rem;
     
 }
+#changework td, #changework th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	}
+	  
+	#changework tr:nth-child(even){background-color: #f2f2f2;}
+	  
+	#changework tr:hover {background-color: #ddd;}
+	  
+	#changework th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #9f1d35;
+	color: white;
+	}
