@@ -1,13 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-console.log("TESTTESTTEST");
-
 router.get('/', function(req, res, next) {
+  if (myDb.find({}))
+  {
+    
+  }
   res.render('index', { title: 'Express' });
 });
-
-
-
 
 module.exports = router;

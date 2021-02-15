@@ -92,22 +92,3 @@ function removeItem() {
 	var item = document.getElementById(helpfulThing.value);
 	ul.removeChild(item);
 }
-
-
-/*function viewAll (app, req, res) {
-  console.info("View All controller");
-  app
-    .set("myDb")
-    .collection("Student")
-    .find({})
-    .toArray(function (err, docs) {
-      //console.dir(docs)
-      if (err) {
-        console.error(err);
-      }
-      return res.render("films", {
-        title: "All Films",
-        films: docs,
-        login: req.session.login,
-      });
-    })};*/
