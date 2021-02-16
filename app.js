@@ -5,25 +5,29 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./index');
+var usersRouter = require('./routes/users');
 
-const app = express();
+var app = express();
 const port = process.env.PORT || "8000";
 
 // view engine setup
-console.log("1")
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-console.log("2")
-app.use('./index');
-console.log("3")
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
-console.log("4")
+
 
 /*var testObj = {SID:3, TID:1, Fname:"L",Lname:"CORFIELD"};
 
@@ -37,6 +41,7 @@ client.connect(err => {
   collection.insertOne(testObj);
   client.close();
 });*/
+
 var MongoClient = require('mongodb').MongoClient
 
 //mongodb://localhost:27017
@@ -47,6 +52,7 @@ MongoClient.connect('mongodb+srv://admin:CyyuBE7j1c8BlVx2@cluster0.wbsei.mongodb
   app.set('myDb', client.db('CatApp'));
 
 })
+
 app.listen(port, () => {
   console.log(`Listening to requests on http://localhost:${port}`);
 });

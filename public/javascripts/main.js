@@ -63,6 +63,7 @@ function studentAdd() {
   '<td><button class = "studentbtn" >Lauren</button></td>' +
   "<td>18/04/1996</td>"+
   "</tr>"); 
+
 }
 
 $(document).ready(function(){
