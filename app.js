@@ -4,21 +4,38 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+<<<<<<< HEAD
 var indexRouter = require('./index');
+=======
+
+
+>>>>>>> 18598d3d4f4b960c8e995f10927f591a117c844d
 
 const app = express();
 const port = process.env.PORT || "8000";
+console.log("app test 1")
+
 
 // view engine setup
+<<<<<<< HEAD
 console.log("1")
+=======
+
+>>>>>>> 18598d3d4f4b960c8e995f10927f591a117c844d
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+<<<<<<< HEAD
 console.log("2")
 app.use('./index');
 console.log("3")
+=======
+
+console.log("app test 2")
+
+>>>>>>> 18598d3d4f4b960c8e995f10927f591a117c844d
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -52,4 +69,6 @@ app.listen(port, () => {
 });
 
 module.exports = app;
+
+console.log("app test 3")
 
