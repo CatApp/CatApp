@@ -11,9 +11,11 @@ const path = require("path");
  * App Variables
  */
 
-const app = express();
+//const app = express();
+console.log("test1")
+var app = require('./app.js')
 const port = process.env.PORT || "8000";
-
+console.log("test2")
 /**
  *  App Configuration
  */

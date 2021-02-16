@@ -4,15 +4,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./index');
-var usersRouter = require('./routes/users');
+
+
 
 var app = express();
 const port = process.env.PORT || "8000";
+console.log("app test 1")
+
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -20,8 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+console.log("app test 2")
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -58,4 +57,6 @@ app.listen(port, () => {
 });
 
 module.exports = app;
+
+console.log("app test 3")
 
