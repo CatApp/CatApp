@@ -7,11 +7,9 @@
  * App Variables
  */
 
-//const app = express();
-console.log("test1")
-var app = require('./app.js')
+const app = express();
 const port = process.env.PORT || "8000";
-console.log("test2")
+
 /**
  *  App Configuration
  */
